@@ -6,7 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Pages
 import Home from './pages/Home/Home';
 import Login from "./pages/Sign/Sign";
-import SignUp from './pages/SignUp/SignUp';
 import Chats from "./pages/Chats/Chats"
 
 //Components
@@ -27,7 +26,6 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/sign" component={Login} />
-			  	<Route path="/signup" exact component={SignUp} />
           <Route path="/chats" component={Chats} />
         </Switch>
         </AuthProvider>

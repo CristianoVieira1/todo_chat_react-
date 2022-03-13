@@ -8,8 +8,4 @@ export const data = [
 		to: '/sign',
 		text: 'Login',
 	},
-	{
-		to: '/signup',
-		text: 'Cadastro',
-	},
 ];
