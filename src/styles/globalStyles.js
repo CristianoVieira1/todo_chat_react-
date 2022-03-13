@@ -1,7 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
   list-style: none;
   text-decoration: none;
 }
-
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant: #2c2c6c;
@@ -37,24 +35,19 @@ const GlobalStyle = createGlobalStyle`
   --transition: all 400ms ease;
   --color-linear: linear-gradient(to left, #8942a8, #4439a7);
 }
-
 *,
 ::after,
 ::before {
   box-sizing: border-box
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
 }
-
 /* efeito background login  */
-
 .box-area {
 	top: 0;
 	left: 0;
@@ -121,42 +114,11 @@ body {
 	}
 }
 
-.chats-page {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-}
-
-.nav-bar {
-  width: 100%;
-  height: 66px;
-  background-color: #002766;
-}
-
-.logo-tab {
-  position: absolute;
-  left: 22px;
-  top: 12px;
-  font-size: 32px;
-  font-weight: 700;
-  color: white;
-}
-
-.logout-tab {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  color: white;
-  cursor: pointer;
-}
 
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
 }
-
 #loading-container {
   position: absolute;
   top: 0px;
@@ -165,14 +127,12 @@ body {
   right: 0px;
   background-color: rgb(255, 255, 255, 0.22);
 }
-
 #loading-icon {
   font-size: 66px;
   position: relative;
   left: calc(50vw - 33px);
   top: calc(50vh - 22px);
 }
-
 `;
 
 export const Container = styled.div`
@@ -181,7 +141,6 @@ export const Container = styled.div`
 	margin-right: auto;
 	margin-left: auto;
 	padding: 0 50px;
-
 	@media screen and (max-width: 960px) {
 		padding: 0 30px;
 	}
@@ -227,7 +186,6 @@ export const Section = styled.section`
 	height: ${({ height }) => (height ? height : 'auto')};
 	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
 	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
-
 	@media screen and (max-width: 768px) {
 		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
 	}
@@ -279,7 +237,6 @@ export const Button = styled.button`
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
-
 	&:before {
 		background: var(--info);
 		content: '';
@@ -293,11 +250,9 @@ export const Button = styled.button`
 		height: 0%;
 		transform: translate(-50%, -50%) rotate(45deg);
 	}
-
 	&:hover:before {
 		height: 500%;
 	}
-
 	&:hover {
 		color: var(--white);
 	}

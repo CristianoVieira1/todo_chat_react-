@@ -2,17 +2,19 @@
 import React from "react";
 import GlobalStyle from "./styles/globalStyles";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
 
 //Pages
 import Home from './pages/Home/Home';
-import SignUp from './pages/SignUp/Signup';
-import Footer from './components/Footer/Footer';
 import Login from "./pages/Sign/Sign";
+import SignUp from './pages/SignUp/SignUp';
+import Chats from "./pages/Chats/Chats"
+
+//Components
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
 
 import { AuthProvider } from "./auth/AuthContext"
 
-import Chats from "./pages/Chats/Chats"
 
 
 function App() {
