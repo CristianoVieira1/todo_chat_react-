@@ -6,9 +6,14 @@ import ButtonFacebook from "../../components/button/btnFacebook";
 import { LoginPage, LoginCard } from "./style";
 import Background from "../../components/background";
 
+//Components
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
+
 const Login = () => {
   return (
     <>
+    <Navbar />
     <LoginPage>
       <LoginCard>
         <h2>Bem Vindo</h2>
@@ -21,6 +26,7 @@ const Login = () => {
       </LoginCard>
     </LoginPage>
     <Background />
+    <Footer />
     </>
   );
 };

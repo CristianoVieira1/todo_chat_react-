@@ -3,13 +3,11 @@ import React, { useRef, useState, useEffect } from "react"
 import axios from 'axios'
 import { useHistory } from "react-router-dom"
 import { ChatEngine } from 'react-chat-engine'
-
 import { useAuth } from "../../auth/AuthContext"
-
 import { auth } from "../../auth/firebase"
-import { FaSignOutAlt } from "react-icons/fa";
 
-import { ChatsPage, Nav, LogoutTab } from "./styles";
+import { FaSignOutAlt } from "react-icons/fa";
+import { ChatsPage, Nav, LogoutTab, NavLogo, NavIcon } from "./styles";
 
 export default function Chats() {
   const didMountRef = useRef(false)
@@ -33,7 +31,7 @@ export default function Chats() {
       didMountRef.current = true
 
       if (!user || user === null) {
-        history.push("/")
+        // history.push("/")
         return
       }
       
@@ -79,6 +77,10 @@ export default function Chats() {
   return (
     <ChatsPage>
       <Nav>
+          <NavLogo>
+						<NavIcon src="./assets/logo.png" alt="logo" />
+						ChatOn
+					</NavLogo>
         <LogoutTab onClick={handleLogout}>
            <FaSignOutAlt />
         </LogoutTab>

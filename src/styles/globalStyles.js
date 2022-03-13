@@ -9,6 +9,7 @@ const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+	overflow-x: hidden;
 }
 :root {
   --color-bg: #1f1f38;
@@ -66,7 +67,7 @@ body {
 	bottom: 0;
 }
 .box-area li:nth-child(1) {
-	left: 86%;
+	left: 30%;
 	width: 80px;
 	height: 80px;
 	animation-delay: 0s;
@@ -79,13 +80,13 @@ body {
 	animation-duration: 10s;
 }
 .box-area li:nth-child(3) {
-	left: 70%;
+	left: 9%;
 	width: 100px;
 	height: 100px;
 	animation-delay: 5.5s;
 }
 .box-area li:nth-child(4) {
-	left: 42%;
+	left: 48%;
 	width: 150px;
 	height: 150px;
 	animation-delay: 0s;
@@ -178,7 +179,7 @@ export const TextWrapper = styled.span`
 export const Section = styled.section`
 	padding: ${({ padding }) => (padding ? padding : '140px 0')};
 	margin: ${({ margin }) => (margin ? margin : '')};
-	background: ${({ inverse }) => (inverse ? 'white' : `var(--color-linear)`)};
+	background: ${({ inverse }) => (inverse ? 'white' : '#2c2c6c')};
 	position: ${({ position }) => (position ? position : '')};
 	width: ${({ width }) => (width ? width : 'auto')};
 	min-width: ${({ minWidth }) => (minWidth ? minWidth : 'auto')};

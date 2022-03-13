@@ -3,15 +3,19 @@ import { Content } from '../../components/Content/Content';
 import Hero from '../../components/Hero/Hero';
 import { heroOne, heroTwo, heroThree } from '../../data/HeroData';
 
-// Hero Feature Content Carousel
+//Components
+import Navbar from '../../components/Navbar/Navbar';
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 	return (
 		<>
+		<Navbar />
 			<Hero />
 			<Content {...heroOne} />
 			<Content {...heroTwo} />
 			<Content {...heroThree} />
+		<Footer />
 		</>
 	);
 };

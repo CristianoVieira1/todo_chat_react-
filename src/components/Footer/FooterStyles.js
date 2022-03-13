@@ -11,6 +11,7 @@ export const FooterWrapper = styled.div`
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	
 `;
 
 export const FooterSubscription = styled.section`

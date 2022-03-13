@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, MainHeading } from '../../styles/globalStyles';
-import { HeroImg, HeroSection, HeroText, ButtonWrapper, HeroButton } from './HeroStyles';
-
-// import Background from './assets/hero.png';
+import { HeroImg, HeroSection, HeroText, ButtonWrapper } from './HeroStyles';
 
 const Hero = () => {
 	return (
@@ -15,11 +13,8 @@ const Hero = () => {
 					Com o ChatOn tudo fica divertido
 				</HeroText>
 				<ButtonWrapper>
-					<Link to="/sign">
+					<Link to="/login">
 						<Button>Logar</Button>
-					</Link>
-					<Link to="signup">
-					<HeroButton>Cadastre-se</HeroButton>
 					</Link>
 				</ButtonWrapper>
 			</Container>

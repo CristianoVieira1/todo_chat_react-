@@ -1,15 +1,30 @@
 /* eslint-disable no-undef */
 import React from 'react'
+import { useHistory } from "react-router-dom"
+
+import firebase from "firebase/app";
+import 'firebase/app';
+
 import { FacebookOutlined } from '@ant-design/icons';
 
-import 'firebase/app';
-import { auth } from '../../auth/firebase';
-
 const ButtonFacebook = () => {
+  const history = useHistory();
+
+  const actionFacebook = async () => {
+      const provider = new firebase.auth.FacebookAuthProvider();
+      let result = await firebase.auth().signInWithPopup(provider);
+      if (!result == null) {
+        history.push("/")
+        
+    } else {
+      history.push('/chats')
+    }
+    
+  }
   return (
   <div className="login-button facebook"
-    onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}>
-    <FacebookOutlined /> Sign In with Facebook  
+  onClick={actionFacebook}>
+    <FacebookOutlined /> Logar com Facebook  
     </div>
   )
   // firebase.auth.FacebookAuthProvider()

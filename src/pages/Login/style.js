@@ -39,10 +39,10 @@ export const LoginPage = styled.div`
 export const LoginCard = styled.div`
   position: relative;
   top: calc(50vh - 144px);
-  left: calc(50vw - 210px);
+  left: calc(50vw - 188px);
   padding-top: 36px;
   padding-bottom: 66px;
-  width: 420px;
+  width: 377px;
   text-align: center;
   background-color: white;
   border-radius: 22px;

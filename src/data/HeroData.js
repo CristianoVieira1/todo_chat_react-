@@ -22,7 +22,7 @@ export const heroTwo = {
 	description: 'Lorem Ipsum is simply dummy text of the printing',
 	buttonLabel: 'Conhecer',
 
-	linkTo: '/sign',
+	linkTo: '/login',
 	imgStart: 'start',
 	img: './assets/svg/Connection.svg',
 	start: 'true',
@@ -39,7 +39,7 @@ export const heroThree = {
 		'Lorem Ipsum is simply dummy text of the printing',
 	buttonLabel: 'Vamos lá',
 
-	linkTo: '/sign',
+	linkTo: '/login',
 	imgStart: '',
 	img: './assets/svg/ChartUp.svg',
 	start: 'true',
